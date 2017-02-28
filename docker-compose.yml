@@ -1,0 +1,8 @@
+version: '2'
+
+services:
+  github-emptyaspnetcoreprojectwithdocker:
+    image: github-emptyaspnetcoreprojectwithdocker
+    build:
+      context: ./github-emptyAspNetCoreProjectWithDocker
+      dockerfile: Dockerfile
