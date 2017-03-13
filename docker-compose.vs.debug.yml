@@ -1,15 +1,15 @@
 version: '2'
 
 services:
-  github-emptyaspnetcoreprojectwithdocker:
-    image: github-emptyaspnetcoreprojectwithdocker:dev
+  webapplication1:
+    image: webapplication1:dev
     build:
       args:
         source: ${DOCKER_BUILD_SOURCE}
     environment:
       - DOTNET_USE_POLLING_FILE_WATCHER=1
     volumes:
-      - ./github-emptyAspNetCoreProjectWithDocker:/app
+      - ./WebApplication1:/app
       - ~/.nuget/packages:/root/.nuget/packages:ro
       - ~/clrdbg:/clrdbg:ro
     entrypoint: tail -f /dev/null

@@ -1,8 +1,8 @@
 version: '2'
 
 services:
-  github-emptyaspnetcoreprojectwithdocker:
-    image: github-emptyaspnetcoreprojectwithdocker
+  webapplication1:
+    image: webapplication1
     build:
-      context: ./github-emptyAspNetCoreProjectWithDocker
+      context: ./WebApplication1
       dockerfile: Dockerfile

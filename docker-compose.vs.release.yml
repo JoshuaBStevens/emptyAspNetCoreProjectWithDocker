@@ -1,7 +1,7 @@
 version: '2'
 
 services:
-  github-emptyaspnetcoreprojectwithdocker:
+  webapplication1:
     build:
       args:
         source: ${DOCKER_BUILD_SOURCE}
